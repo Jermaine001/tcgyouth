@@ -1,0 +1,26 @@
+
+{% load static%}
+{% block content %}
+<section class="s-hero" data-parallax="scroll" data-image-src="{% static 'images/hero-bg-3000.jpg' %}" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+        
+
+    <div class="hero-left-bar"></div>
+
+    <div class="row hero-content">
+
+        <div class="column large-full hero-content__text">
+<h1>Attendance Report for {{ date }}</h1>
+<table>
+    <tr>
+        <th>Member</th>
+        <th>Status</th>
+    </tr>
+    {% for record in attendance_records %}
+        <tr>
+            <td>{{ record.member.first_name }} {{ record.member.last_name }}</td>
+            <td>{{ record.status }}</td>
+        </tr>
+    {% endfor %}
+</table>
+<a href="{% url 'member_list' %}">Back to Mark Attendance</a>
+{% endblock %}
