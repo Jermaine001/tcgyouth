@@ -131,3 +131,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#for backend authentication of the users during login
+AUTHENTICATION_BACKENDS = [
+    'core.backends.EmailOrUsernameBackend',  # Custom backend
+    'django.contrib.auth.backends.ModelBackend',  # Default backend
+]
+
+LOGIN_REDIRECT_URL = '/profile/'
+LOGIN_URL = 'login'
+ 

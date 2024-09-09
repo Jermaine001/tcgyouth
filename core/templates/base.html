@@ -7,7 +7,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>The Choosen Generation </title>
+    <title>{% block title %} The Choosen Generation {% endblock %}</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -51,62 +51,30 @@
 
         <div class="header-logo">
             <a class="site-logo" href="{% url 'index' %}">
-                <img src="{% static 'images/logo.svg' %}" alt="Homepage">
+                <img src="{% static 'images/TCG.jpg' %}" alt="Homepage">
             </a>
         </div>
 
         <nav class="header-nav-wrap">
             <ul class="header-nav">
                 <li class="current"><a href="{% url 'index'%}" title="Home">Home</a></li>
-                <li><a href="{% url 'about' %}" title="About">About</a></li>
-                <li><a href="{%url 'events' %}" title="Services">Events</a></li>
+                <li><a href="{% url 'about' %}" title="About">About Us</a></li>
+                <li><a href="{%url 'events' %}" title="Services">Services</a></li>
+                <li><a href="{%url 'events' %}" title="Services">Media</a></li>
+                <li><a href="{%url 'events' %}" title="Services">Blog</a></li>
                 <li><a href="{% url 'contact' %}" title="Contact us">Contact</a></li>
-                <a href="#" class="btn btn-primary">Login</a>	
+                <li><a href="{% url 'login' %}" class ="bazuu-link" title="Login">Login</a></li>
+               
             </ul>
         </nav>
 
-        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
 
     </header> <!-- end s-header -->
 {% block content %}
 
 {% endblock %}
-<!-- Social
-    ================================================== -->
-    <section class="s-social">
-            
-        <div class="row social-content">
-            <div class="column">
-                <ul class="social-list">
-                    <li class="social-list__item">
-                        <a href="#0" title="">
-                            <span class="social-list__icon social-list__icon--facebook"></span>
-                            <span class="social-list__text">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="social-list__item">
-                        <a href="#0" title="">
-                            <span class="social-list__icon social-list__icon--twitter"></span>
-                            <span class="social-list__text">Twitter</span>
-                        </a>
-                    </li>
-                    <li class="social-list__item">
-                        <a href="#0" title="">
-                            <span class="social-list__icon social-list__icon--instagram"></span>
-                            <span class="social-list__text">Instagram</span>
-                        </a>
-                    </li>
-                    <li class="social-list__item">
-                        <a href="#0" title="">
-                            <span class="social-list__icon social-list__icon--email"></span>
-                            <span class="social-list__text">Email</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div> <!-- end social-content -->
 
-    </section> <!-- end s-social -->
 <!-- footer
     ================================================== -->
     <footer class="s-footer">
@@ -166,3 +134,11 @@
         </div> <!-- ss-go-top -->
 
     </footer> <!-- end s-footer -->
+
+        <!-- Java Script
+    ================================================== -->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>    

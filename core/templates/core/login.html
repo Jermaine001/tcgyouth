@@ -1,0 +1,18 @@
+
+{% load static %}
+{% block title%}TCG | Login {% endblock %} 
+
+
+{% block content%}
+<!-- myapp/templates/login.html -->
+<h2>TCG Login</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+</form>
+
+
+{% endblock %}
+    
+

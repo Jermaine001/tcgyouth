@@ -1,8 +1,6 @@
 
 /* =================================================================== 
- *  Hesed Main Stylesheet
- *  Template Ver. 1.0.0
- *  06-26-2019
+
  *  ------------------------------------------------------------------
  *
  *  TOC:
@@ -1835,9 +1833,35 @@ input::-moz-focus-inner {
 }
 
 .header-logo img {
-  width: 108px;
-  height: 28px;
+  width: 158px;
+  height: 48px;
+  border-radius: 12px;
 }
+
+.bazuu-link {
+  display: inline-block; /* Ensures the link behaves like a button */
+  background-color: #441166; /* Primary blue background */
+  color: #fff; /* White text */
+  padding: 4px 4px; /* Adds padding for a button-like appearance */
+  border-radius: 12px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 10px; /* Font size */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.bazuu-link:hover {
+  background-color: hsl(266, 92%, 44%); /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+  color: #fff;
+}
+
+.bazuu-link:active {
+  background-color: #004080; /* Even darker blue when clicked */
+  transform: translateY(0); /* Reset lift */
+}
+
+
 
 /* -------------------------------------------------------------------
  * ## main navigation
@@ -1871,6 +1895,23 @@ input::-moz-focus-inner {
   display: inline-block;
   margin: 0 .8rem;
 }
+
+.login-btn {
+  background-color: #333333;
+  color: white;
+  padding: 15px 30px;
+  font-size: 9px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #45a049;
+}
+
+
 
 /* ------------------------------------------------------------------- 
  * ## mobile menu toggle
@@ -2152,6 +2193,7 @@ input::-moz-focus-inner {
   color: #ffffff;
   width: 30rem;
   margin-right: 0;
+  border-radius: 12px;
 }
 
 .hero-content__buttons .btn:hover,

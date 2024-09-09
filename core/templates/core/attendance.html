@@ -1,0 +1,14 @@
+<form method="post">
+    {% csrf_token %}
+    {% for registration in registrations %}
+      <div>
+        <label>{{ registration.full_name }}</label>
+        <select name="attendance_{{ registration.id }}">
+          <option value="present">Present</option>
+          <option value="absent">Absent</option>
+        </select>
+      </div>
+    {% endfor %}
+    <button type="submit">Submit Attendance</button>
+  </form>
+  
