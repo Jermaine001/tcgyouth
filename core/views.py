@@ -18,3 +18,6 @@ def volunteer(request):
 
 def connect_group (request):
     return render(request, 'core/connect_group.html')
+
+def test (request):
+    return render (request, 'core/landing.html')
