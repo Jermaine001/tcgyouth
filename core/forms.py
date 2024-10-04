@@ -1,26 +1,23 @@
-# myapp/forms.py
+# core/forms.py
 from django import forms
-from django.contrib.auth.forms import AuthenticationForm
-from .models import Registration
+from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserCreationForm
+class LoginForm(forms.Form):
+    username = forms.CharField(max_length=150, label='Username')
+    password = forms.CharField(widget=forms.PasswordInput, label='Password')
 
-#login Form 
-class CustomAuthenticationForm(AuthenticationForm):
-    username = forms.CharField(label='Username or Email', max_length=254)
+class SignupForm(forms.ModelForm):
+    password = forms.CharField(widget=forms.PasswordInput, label="Password")
+    confirm_password = forms.CharField(widget=forms.PasswordInput, label="Confirm Password")
+
+    class Meta:
+        model = User
+        fields = ['username', 'email', 'password']
 
     def clean(self):
-        username = self.cleaned_data.get('username')
-        password = self.cleaned_data.get('password')
-        if username and password:
-            # You can add additional validation here if needed
-            pass
-        return self.cleaned_data
-    
+        cleaned_data = super().clean()
+        password = cleaned_data.get("password")
+        confirm_password = cleaned_data.get("confirm_password")
 
-#Registration  For Form TCG 
-from .models import Registration
-
-class RegistrationForm(forms.ModelForm):
-    class Meta:
-        model = Registration
-        fields = ['first_name', 'last_name', 'email', 'phone_number', 'residence', 'age', 'gender', 'date_of_birth']
-
+        if password and confirm_password and password != confirm_password:
+            raise forms.ValidationError("Passwords do not match.")

@@ -1,0 +1,17 @@
+{% extends 'base2.html'%}
+{% load static%}
+{% block content %}
+
+<div class="ss-container">
+    <div class="success-card">
+        <!-- Smiling emoji icon -->
+        <div class="success-icon">😊</div>
+        <!-- Success message -->
+        <h1>Registration Successful!</h1>
+        <p>Welcome to the Tcg Family! Your registration was completed successfully.</p>
+        <!-- Link to login -->
+        <a href="{% url 'login' %}">Go to Login</a>
+    </div>
+</div>
+
+{% endblock %}

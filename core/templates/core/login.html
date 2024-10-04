@@ -1,18 +1,32 @@
+{% extends 'base2.html'%}
+{% load static%}
+{% block content %}
 
-{% load static %}
-{% block title%}TCG | Login {% endblock %} 
+<div class="tgc">
+    <h1>Login</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
 
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required>
 
-{% block content%}
-<!-- myapp/templates/login.html -->
-<h2>TCG Login</h2>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Login</button>
-</form>
+        <button type="submit">Login</button>
+    </form>
 
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
 
-{% endblock %}
+    <!-- Option to go to signup page or reset password -->
+    <p>Forgot your password? <a href="#">Reset it here</a>.</p>
+    <p>Don't have an account? <a href="{% url 'signup' %}">Sign up here</a>.</p>
     
+</div>
+{% endblock %}
 
