@@ -10,7 +10,10 @@ from .views import (
     login,
     test,
     signup,
-    home
+    home, 
+    register_profile, 
+    profile_success, 
+    success
    
 )
 
@@ -24,6 +27,9 @@ urlpatterns = [
     path('login/', login, name='login'), 
     path('signup/', signup, name='signup'),
     path('test/', test, name='test'),
-    path('home/', home, name='home')
+    path('home/', home, name='home'),
+    path('register/', register_profile, name='register'),
+    path('profile_success/', profile_success, name='profile_success'),
+    path('success/', success, name='success')
 
 ]

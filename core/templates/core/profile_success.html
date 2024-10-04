@@ -1,0 +1,12 @@
+{% extends 'base2.html'%}
+{% load static%}
+{% block content %}
+
+<div class="tcg-success">
+    <h1>Profile Registration Successful 😊</h1>
+    <p>Your profile has been registered successfully!</p>
+    <p>{{ user.get.first_name }}! Welcome to the family.</p>  <!-- Display first name -->
+    <a href="{% url 'test' %}">Go to your profile</a> <!-- Link to the profile page -->
+</div>
+
+{% endblock %}

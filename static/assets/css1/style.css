@@ -1752,3 +1752,71 @@ hr {
             transform: translateY(0);
         }
     }
+
+    .registration-container {
+        width: 50%;
+        margin: 50px auto;
+        padding: 30px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+    }
+
+    .registration-container h1 {
+        text-align: center;
+        color: #4BB543;
+    }
+
+    .registration-container form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .registration-container label {
+        margin: 10px 0 5px 0;
+        font-weight: bold;
+    }
+
+    .registration-container input,
+    .registration-container select {
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        font-size: 14px;
+    }
+
+    .registration-container button {
+        padding: 12px;
+        background-color: #4BB543;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .registration-container button:hover {
+        background-color: #3da233;
+    }
+
+    .tcg-success {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;  /* Full viewport height */
+        background-color: #f0f8ff;  /* Light background color */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .tcg-success h1 {
+        font-size: 2.5em;  /* Adjust font size as needed */
+        color: #4CAF50;  /* Green color */
+    }
+    .tcg-success p {
+        font-size: 1.2em;  /* Adjust font size as needed */
+        color: #333;  /* Dark color */
+    }
