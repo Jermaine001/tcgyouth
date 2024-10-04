@@ -1,16 +1,12 @@
 from django.shortcuts import render, redirect
-#from django.contrib.auth.forms import AuthenticationForm
-#from django.contrib.auth import login as auth_login
-#from django.views import View
-#from django.contrib.auth.decorators import login_required
-# Create your views here.
-from .forms import RegistrationForm
-from django.contrib.auth import login as auth_login
+from .forms import LoginForm
+from django.contrib.auth import authenticate, login as auth_login
 from django.views import View
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
 from .models import Registration, Attendance
 from django.contrib.admin.views.decorators import staff_member_required
+
 
 
 def index(request):
@@ -30,72 +26,19 @@ def volunteer(request):
 
 def connect_group (request):
     return render(request, 'core/connect_group.html')
-#login view user the django authenication
-#class CustomLoginView(View):
-    def get(self, request):
-        form = AuthenticationForm()
-        return render(request, 'core/login.html', {'form': form})
 
-    def post(self, request):
-        form = AuthenticationForm(request, data=request.POST)
-        if form.is_valid():
-            user = form.get_user()
-            auth_login(request, user)
-            return redirect('profile')
-        return render(request, 'core/login.html', {'form': form})
-
-#profile redirection html after authentification
-def profile_view(request):
-    return render(request, 'core/profile.html')
-
-
-# Login View
-
-
-class CustomLoginView(View):
-    def get(self, request):
-        form = AuthenticationForm()
-        return render(request, 'core/login.html', {'form': form})
-
-    def post(self, request):
-        form = AuthenticationForm(request, data=request.POST)
-        if form.is_valid():
-            user = form.get_user()
-            auth_login(request, user)
-            return redirect('profile')
-        return render(request, 'core/login.html', {'form': form})
-
-@login_required
-def profile_view(request):
-    return render(request, 'core/profile.html')
-
-
-#Registration Views
-
-
-@login_required
-def register_view(request):
+def login(request):
     if request.method == 'POST':
-        form = RegistrationForm(request.POST)
+        form = LoginForm(request.POST)
         if form.is_valid():
-            registration = form.save(commit=False)
-            registration.user = request.user
-            registration.save()
-            return redirect('profile')  # Redirect to a success page
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                auth_login(request, user)  # Log in the user
+                return redirect('home')  # Redirect to a home page or wherever you want
+            else:
+                form.add_error(None, 'Invalid username or password.')
     else:
-        form = RegistrationForm()
-
-    return render(request, 'core/registration.html', {'form': form})
-    
-#Attendance View
-@staff_member_required
-def attendance_view(request):
-    registrations = Registration.objects.all()
-    
-    if request.method == 'POST':
-        for registration in registrations:
-            status = request.POST.get(f'attendance_{registration.id}')
-            Attendance.objects.create(registration=registration, status=status)
-        return redirect('attendance_success')  # Redirect to a success page after marking attendance
-
-    return render(request, 'core/attendance.html', {'registrations': registrations})
+        form = LoginForm()
+    return render(request, 'core/login.html', {'form': form})
