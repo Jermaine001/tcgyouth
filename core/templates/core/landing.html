@@ -1,0 +1,802 @@
+{% extends 'base2.html'%}
+{% load static%}
+{% block content %}
+
+  <!-- Carousel Start -->
+  <div class="carousel-header">
+    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="{% static 'assets/images/hero-bg-3000.jpg' %}" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption-1">
+                    <div class="carousel-caption-1-content" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase fw-bold mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">The chosen Generation</h4>
+                        <h1 class="display-2 text-capitalize text-white mb-4 fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.3s" style="animation-delay: 1.3s;">Join Us in Worship, Growth, and Service."
+
+                        </h1>
+                        <p class="mb-5 fs-5 text-white fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.5s" style="animation-delay: 1.5s;">Everything You Need To Know To
+                             Release Your Life’s Greatest Potential
+                            And Take Your Authority A Kingdom Ambassador
+                        </p>
+                        <div class="carousel-caption-1-content-btn fadeInLeft animated" data-animation="fadeInLeft" data-delay="1.7s" style="animation-delay: 1.7s;">
+                            <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="#">Watch Video</a>
+                            <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="#">TCG Family</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'assets/images/banner1.jpg' %}" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption-2">
+                    <div class="carousel-caption-2-content" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase fw-bold mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">The chosen Generation</h4>
+                        <h1 class="display-2 text-capitalize text-white mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1.3s" style="animation-delay: 1.3s;">A Place Where Your Faith Can Flourish.
+                            </h1>
+                        <p class="mb-5 fs-5 text-white fadeInRight animated" data-animation="fadeInRight" data-delay="1.5s" style="animation-delay: 1.5s;">Discover a place where you can grow spiritually and connect deeply. Our doors are open, and we welcome you to join us in worship and fWatch Video 
+                        </p>
+                        <div class="carousel-caption-2-content-btn fadeInRight animated" data-animation="fadeInRight" data-delay="1.7s" style="animation-delay: 1.7s;">
+                            <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="#">Watch Video</a>
+                            <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="#">TCG Family</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'assets/images/banner2.jpg' %}" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption-2">
+                    <div class="carousel-caption-2-content" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase fw-bold mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">The chosen Generation</h4>
+                        <h1 class="display-2 text-capitalize text-white mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1.3s" style="animation-delay: 1.3s;">"Where You Are Welcomed with Love and Grace.
+                            </h1>
+                        <p class="mb-5 fs-5 text-white fadeInRight animated" data-animation="fadeInRight" data-delay="1.5s" style="animation-delay: 1.5s;">Experience a community where faith thrives. Join us as we journey together towards a life of purpose and grace. 
+                        </p>
+                        <div class="carousel-caption-2-content-btn fadeInRight animated" data-animation="fadeInRight" data-delay="1.7s" style="animation-delay: 1.7s;">
+                            <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="#">Watch Video</a>
+                            <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="#">TCG Family</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'assets/images/banner4.jpg' %}" class="img-fluid w-100" alt="Image">
+                <div class="carousel-caption-2">
+                    <div class="carousel-caption-2-content" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase fw-bold mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1s" style="animation-delay: 1s;" style="letter-spacing: 3px;">The chosen Generation</h4>
+                        <h1 class="display-2 text-capitalize text-white mb-4 fadeInRight animated" data-animation="fadeInRight" data-delay="1.3s" style="animation-delay: 1.3s;">"Where You Are Welcomed with Love and Grace.
+                            </h1>
+                        <p class="mb-5 fs-5 text-white fadeInRight animated" data-animation="fadeInRight" data-delay="1.5s" style="animation-delay: 1.5s;">Experience a community where faith thrives. Join us as we journey together towards a life of purpose and grace. 
+                        </p>
+                        <div class="carousel-caption-2-content-btn fadeInRight animated" data-animation="fadeInRight" data-delay="1.7s" style="animation-delay: 1.7s;">
+                            <a class="btn btn-primary rounded-pill flex-shrink-0 py-3 px-5 me-2" href="#">Watch Video</a>
+                            <a class="btn btn-secondary rounded-pill flex-shrink-0 py-3 px-5 ms-2" href="#">TCG Family</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon btn btn-primary fadeInLeft animated" aria-hidden="true" data-animation="fadeInLeft" data-delay="1.1s" style="animation-delay: 1.3s;"> <i class="fa fa-angle-left fa-3x"></i></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+            <span class="carousel-control-next-icon btn btn-primary fadeInRight animated" aria-hidden="true" data-animation="fadeInLeft" data-delay="1.1s" style="animation-delay: 1.3s;"><i class="fa fa-angle-right fa-3x"></i></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+  </div>
+  <!-- Carousel End -->
+
+<!-- Feature Start -->
+<div class="container-fluid feature bg-light py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Who We Are</h4>
+                    <h1 class="display-4 mb-4">The TCG Family. Raising a youthfull banner for Christ</h1>
+                    <p class="mb-0">At RCCG Solution Centre Youth Church, we are a vibrant community of young believers passionate about
+                         discovering purpose and growing in faith. Our mission is to create a space where youth can connect with God, 
+                        build meaningful relationships, and be empowered to make a difference in the world. Through dynamic worship, 
+                        engaging teachings, and fun-filled events, we seek to inspire the next generation to live out their faith boldly
+                        and authentically. Whether you're exploring your faith or looking for a place to belong, you’re welcome here—we're
+                        all on this journey together
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <<i class="fa fa-praying-hands fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4">Sold Out to Christ</h4>
+                            <p class="mb-4">Creating dynamic and meaningful worship experiences that resonate with today’s youth.
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fa fa-cross fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4">Passionate Faith</h4>
+                            <p class="mb-4">Embracing a vibrant relationship with God and nurturing spiritual growth.
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <<i class="fa fa-lightbulb fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4">Youth Empowerment</h4>
+                            <p class="mb-4">Equipping young people with the tools and confidence to live out their faith and make a difference.
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fa fa-users fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4">Fun and Fellowship</h4>
+                            <p class="mb-4">Providing opportunities for fun, friendships, and community-building activities.
+                            </p>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+<!-- Feature End -->
+
+<!--Services section-->
+<div class="section-title">
+            <h4>Our Services</h4>
+</div>
+<div class="service-timings">
+    <div class="slider-container">
+                <div class="slider">
+                    <img src="{% static 'assets/images/pic12.jpg' %}" alt="Slide 1">
+                    <img src="{% static 'assets/images/pic13.jpg' %}" alt="Slide 2">
+                    <img src="{% static 'assets/images/pic3.jpg' %}" alt="Slide 3">
+                    <img src="{% static 'assets/images/pic1.jpg' %}" alt="Slide 3">
+                    <img src="{% static 'assets/images/pic2.jpg' %}" alt="Slide 3">
+                </div>
+    </div>
+    <div class="timings-card">
+                
+                <p class="service-description">Experience uplifting worship, heartfelt fellowship, and inspiring messages designed to strengthen your faith. Join us as we come together in praise and grow in our spiritual journey. Whether you’re new or returning, there’s a place for you here. Let’s connect, grow, and make a difference together.</p>
+                <div class="card">
+                    <h3>Service Timings</h3>
+                    <div class="service">
+                        <h4>Sunday Morning</h4>
+                        <p>9:00 AM - 10:30 AM</p>
+                    </div>
+                    <hr>
+                    <div class="service">
+                        <h4>Wednesday Evening</h4>
+                        <p>7:00 PM - 8:30 PM</p>
+                    </div>
+                    <hr>
+                    <div class="service">
+                        <h4>Friday Youth Service</h4>
+                        <p>6:00 PM - 7:30 PM</p>
+                    </div>
+                    <hr>
+                    <div class="service">
+                        <h4>Friday Youth Service</h4>
+                        <p>6:00 PM - 7:30 PM</p>
+                    </div>
+                </div>
+    </div>
+</div>
+<!--Sevices end-->
+
+<!-- Work Section Begin -->
+<section class="work">
+
+            <div class="title-container">
+                <h2 class="kioko">Vibe Vault : Unfolding the Heart of Youth Ministry</h2>
+                
+            </div>
+            
+            <div class="work__gallery">
+                <div class="grid-sizer"></div>
+                <div class="work__item wide__item set-bg" data-setbg="{% static 'assets/images/work/work-1.jpg' %}">
+                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                            class="fa fa-play"></i></a>
+                    <div class="work__item__hover">
+                        <h4>Youth Week 2024</h4>
+                        <ul>
+                            <li>Faith | Love | Grace</li>
+                            <li>Re-live the epic moments</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work__item small__item set-bg" data-setbg="{% static 'assets/images/pic1.jpg' %}">
+                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                            class="fa fa-play"></i></a>
+                    <div class="work__item__hover">
+                                <h4>Love in action</h4>
+                                <ul>
+                                    <li>Love the God's way</li>
+                                    <li>Afum Matta</li>
+                                </ul>
+                            </div>               
+                </div>
+                <div class="work__item small__item set-bg" data-setbg="{% static 'assets/images/pic14.jpg' %}">
+                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                            class="fa fa-play"></i></a>
+                </div>
+                <div class="work__item large__item set-bg" data-setbg="{% static 'assets/images/banner5.jpg' %}">
+                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                            class="fa fa-play"></i></a>
+                    <div class="work__item__hover">
+                        <h4>VIP Auto Tires & Service</h4>
+                        <ul>
+                            <li>eCommerce</li>
+                            <li>Magento</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="work__item small__item set-bg" data-setbg="{% static 'assets/images/banner4.jpg' %}">
+                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                            class="fa fa-play"></i></a>
+                </div>
+                <div class="work__item small__item set-bg" data-setbg="{% static 'assests/images/banner2.jpg' %}">
+                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                            class="fa fa-play"></i></a>
+                </div>
+                <div class="work__item wide__item set-bg" data-setbg="{% static 'assets/images/banner1.jpg' %}">
+                    <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="play-btn video-popup"><i
+                            class="fa fa-play"></i></a>
+                    <div class="work__item__hover">
+                        <h4>VIP Auto Tires & Service</h4>
+                        <ul>
+                            <li>eCommerce</li>
+                            <li>Magento</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+</section>
+<!-- Work Section End -->
+
+<!-- About Start -->
+<div class="container-fluid bg-light about pb-5">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="about-item-content bg-white rounded p-5 h-100">
+                            <h4 class="text-primary">The Chosen Generation Family</h4>
+                            <h1 class="display-4 mb-4">"Our Mission: To Inspire and Empower Youth in Christ"</h1>
+                            <p>
+                                We are a vibrant community of young believers passionate about growing in faith,
+                                serving others, and making a difference in the world. Our mission is to inspire 
+                                and empower the next generation to live out their purpose in Christ through meaningful
+                                worship, dynamic teaching, and life-changing fellowship. Together, we’re building a 
+                                space where youth can encounter God, form lasting friendships, and become leaders who
+                                 impact their communities with love and hope.
+                            </p>
+                            <p>
+                                We welcome every young person, no matter where they are on their faith journey,
+                                 to join us in discovering their true identity in Christ. Here, we embrace diversity,
+                                  celebrate individuality, and encourage everyone to use their unique gifts to glorify God.
+                                   Together, we are a family that uplifts, motivates, and grows stronger in faith every day
+                            </p>
+                            <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>Young Hearts, United in Faith.</p>
+                            <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>United in Purpose, Guided by Faith</p>
+                            <p class="text-dark mb-4"><i class="fa fa-check text-primary me-3"></i>Young Voices, Strong Faith, One Mission</p>
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="#">More Information</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="bg-white rounded p-5 h-100">
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-12">
+                                    <div class="rounded bg-light">
+                                        <img src="{% static 'assets/images/banner1.jpg' %}" class="img-fluid rounded w-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">129</span>
+                                            <span class="h1 fw-bold text-primary">+</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark">Years of Ministry</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">3</span>
+                                            <span class="h1 fw-bold text-primary">+</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark">Weekly Services</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">100</span>
+                                            <span class="h1 fw-bold text-primary">+</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark">Youth Members</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">15</span>
+                                            <span class="h1 fw-bold text-primary">+</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark">Youth Leaders</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+<!-- About End -->
+
+<!-- Service Start -->
+<div class="container-fluid service py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Giving Channels</h4>
+                    <h1 class="display-4 mb-4">"Stewardship in Action: Honor God with Your Giving!" (1 Peter 4:10)</h1>
+                    <p class="mb-0"> "Your contributions help us empower the next generation and share the message of hope."
+                    </p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="{% static 'assets/images/giving5.jpg' %}" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fa fa-users fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <a href="#" class="d-inline-block h4 mb-4">Offering</a>
+                                    <p class="mb-4">Giving with Purpose: Your offerings empower youth to shine for God's glory!!</p>
+                                    <p class="mb-4">PayBill: 400200</p>
+                                    <p class="mb-4">Account: 2090#Offering</p>
+                                    <p class="mb-4">Account: KCB 40020004562626</p>
+                                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Give</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="{% static 'assets/images/giving2.jpg' %}" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fa fa-hospital fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <a href="#" class="d-inline-block h4 mb-4">Tithes</a>
+                                    <p class="mb-4">Tithes of Faith: Honor God with your giving and watch Him multiply your blessings!</p>
+                                    <p class="mb-4">PayBill: 400200</p>
+                                    <p class="mb-4">Account: 2090#Offering</p>
+                                    <p class="mb-4">Account: KCB 40020004562626</p>
+                                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Give</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="{% static 'assets/images/givings7.jp' %}g" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fa fa-car fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <a href="#" class="d-inline-block h4 mb-4">Mission</a>
+                                    <p class="mb-4">Join the Journey: Your contributions fuel our mission to spread God's love and grace!</p>
+                                    <p class="mb-4">PayBill: 400200</p>
+                                    <p class="mb-4">Account: 2090#Offering</p>
+                                    <p class="mb-4">Account: KCB 40020004562626</p>
+                                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Give</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="{% static 'assets/images/giving6.jpg' %}" class="img-fluid rounded-top w-100" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fa fa-home fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <a href="#" class="d-inline-block h4 mb-4">TCG Fund</a>
+                                    <p class="mb-4">Together in Purpose: Your support of the youth fund helps us fulfill God's mission for our youth!"</p>
+                                    <p class="mb-4">PayBill: 400200</p>
+                                    <p class="mb-4">Account: 2090#YouthFund</p>
+                                    <p class="mb-4">Account: KCB 40020004562626</p>
+                                    <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Give</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.2s">
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+</div>
+<!-- Service End -->
+
+<!-- FAQs Start -->
+<div class="container-fluid faq-section bg-light py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="h-100">
+                            <div class="mb-5">
+                                <h4 class="text-primary">Some Important FAQ's</h4>
+                                <h1 class="display-4 mb-0">Common Frequently Asked Questions</h1>
+                            </div>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Q: What should I expect during youth services or meetings?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show active" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body rounded">
+                                            A: During youth services and meetings, you can expect a vibrant and welcoming atmosphere where you’ll
+                                             feel right at home. Each gathering typically includes engaging worship music, dynamic teaching, and 
+                                             interactive discussions centered around God’s Word.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Q: How can I get involved in youth activities and programs?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            A: Attend Weekly Meetings: Join us for our regular youth services or gatherings. This is a great way to meet other young people and get connected.
+
+                                            Volunteer: We’re always looking for enthusiastic volunteers to help with events, activities, and leadership roles. Whether you want to help organize events or assist in teaching, your support is welcome!
+                                            
+                                            Participate in Events: Keep an eye on our calendar for upcoming events like retreats, workshops, and community service projects. Participating in these activities is a fantastic way to connect with others and grow in your faith
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Q: How does the youth ministry support spiritual growth?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Engaging Worship: We create an uplifting environment during our services, where youth can connect with God through music, prayer, and worship.
+                                             This experience helps deepen their relationship with Christ.
+
+                                            Bible Studies and Teaching: Our weekly meetings include relevant teachings and discussions centered on the Bible. We cover topics that resonate with young people, helping them understand and apply God’s Word in their daily lives.
+
+                                            Mentorship: Our youth leaders and volunteers are committed to guiding and mentoring young people on their spiritual journeys. Through one-on-one interactions, small group discussions, and relational support, we provide a safe space for youth to ask questions and seek advice.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+                        <img src="{% static 'assets/images/pic16.jpg' %}" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+            </div>
+</div>
+<!-- FAQs End -->
+
+<!-- Blog Start -->
+<div class="container-fluid blog py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">TCG Blog</h4>
+                    <h1 class="display-4 mb-4">"Youth Vibes, Ignite: Stories & Moments"</h1>
+                    <p class="mb-0">In this space, we celebrate the journeys of our young believers as they navigate life,
+                         faith, and friendship. From exciting events and impactful projects to personal stories and reflections, 
+                         our youth blog is a hub of inspiration and connection. Dive in and discover how you can be part of our
+                          vibrant community!
+                    </p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="{% static 'assets/images/pic14.jpg' %}" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-categiry py-2 px-4">
+                                    <span>TCG Member</span>
+                                </div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <div class="blog-comment d-flex justify-content-between mb-3">
+                                    <div class="small"><span class="fa fa-user text-primary"></span> Jess Ayoma</div>
+                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 22 Sept 2024</div>
+                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 54 Comments</div>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">We Came, We Saw, We Conquered: Highlights from Youth Week 2024!</a>
+                                <p class="mb-3">Youth Week 2024 was nothing short of extraordinary!.
+                                    Kicking off the week with a vibrant opening night,
+                                     we gathered to share our dreams and aspirations, igniting 
+                                     a passion for faith and service. Throughout the week, participants
+                                      engaged in thought-provoking discussions, team-building activities,
+                                       and creative expressions of worship that resonated deeply with everyone
+                                        involved.
+                                </p>
+                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="{% static 'assets/images/banner3.j' %}pg" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-categiry py-2 px-4">
+                                    <span>Admin</span>
+                                </div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <div class="blog-comment d-flex justify-content-between mb-3">
+                                    <div class="small"><span class="fa fa-user text-primary"></span>  Kevin Ndori</div>
+                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 1 August 2024</div>
+                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 6 Comments</div>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">Anointed for a Purpose: The Role of Oil in God’s Calling</a>
+                                <p class="mb-3"> The act of anointing with oil has deep biblical significance, symbolizing God’s presence,
+                                     empowerment, and purpose in our lives. Throughout Scripture, oil represents the Holy Spirit,
+                                      healing, and divine appointment, reminding us of the anointing that equips us to fulfill God's purpose.
+                                      Similarly, in 1 Samuel 16:13, we see the anointing of David: “So Samuel took the horn of oil and anointed 
+                                      him in the presence of his brothers, and from that day on the Spirit of the Lord came powerfully upon David.”
+                                      This moment marked David’s preparation for leadership and service, highlighting that the anointing is not just
+                                       a ritual but a transformative experience that equips us for God’s calling.
+                                     </p>
+                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="{% static 'assets/images/pic15.jpg' %}" class="img-fluid rounded-top w-100" alt="">
+                                <div class="blog-categiry py-2 px-4">
+                                    <span>Youth Leader</span>
+                                </div>
+                            </div>
+                            <div class="blog-content p-4">
+                                <div class="blog-comment d-flex justify-content-between mb-3">
+                                    <div class="small"><span class="fa fa-user text-primary"></span> Amos Shammah</div>
+                                    <div class="small"><span class="fa fa-calendar text-primary"></span> 29 Sept 2024</div>
+                                    <div class="small"><span class="fa fa-comment-alt text-primary"></span> 16 Comments</div>
+                                </div>
+                                <a href="#" class="h4 d-inline-block mb-3">The Bonds That Shape Us: Celebrating Friendship</a>
+                                <p class="mb-3">Friendship is one of life's greatest treasures, The Bible offers profound insights
+                                     into the nature of friendship. Proverbs 17:17 reminds us, “A friend loves at all times, and 
+                                     a brother is born for adversity.” True friends stand by us through thick and thin, providing
+                                      support and love during our challenges. These relationships are not just for our comfort; 
+                                      they also serve as a reflection of God’s love for us.</p>
+                                <a href="#" class="btn p-0">Read More  <i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+<!-- Blog End -->
+
+<!-- Team Start -->
+<div class="container-fluid team pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Pastors</h4>
+                    <h1 class="display-4 mb-4">Introducing the Heart of Our Youth Ministry</h1>
+                    <p class="mb-0">"Meet our dedicated youth pastors, 
+                        who bring passion and wisdom to our ministry. They are committed to guiding 
+                        and supporting our young people, creating an environment where everyone feels 
+                        valued and empowered to grow in their faith. Get to know the leaders who inspire
+                         and nurture our youth every day."
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{% static 'assets/images/img2.jpg' %}" class="img-fluid rounded-top w-100" alt="">
+                                <div class="team-icon">
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-title p-4">
+                                <h4 class="mb-0">Afum Matta</h4>
+                                <p class="mb-0">Youth Pastor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{% static 'assets/images/img6.jpg'%}" class="img-fluid rounded-top w-100" alt="">
+                                <div class="team-icon">
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-title p-4">
+                                <h4 class="mb-0">Catherine cathy</h4>
+                                <p class="mb-0">Teacher</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{% static 'assets/images/img5.jpg'%}" class="img-fluid rounded-top w-100" alt="">
+                                <div class="team-icon">
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-title p-4">
+                                <h4 class="mb-0">Sam Abaki</h4>
+                                <p class="mb-0">Teacher</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.8s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="{% static 'assets/images/img4.jpg'%}" class="img-fluid rounded-top w-100" alt="">
+                                <div class="team-icon">
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn btn-primary btn-sm-square rounded-pill mb-0" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-title p-4">
+                                <h4 class="mb-0">Hawas Matta</h4>
+                                <p class="mb-0">Teacher</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+<!-- Team End -->
+
+<!-- Testimonial Start -->
+<div class="container-fluid testimonial pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Testimonial</h4>
+                    <h1 class="display-4 mb-4">What Our Members Are Saying</h1>
+                    <p class="mb-0">Hear directly from our members.
+                        Their stories are a testament to our community's impact.
+                        Discover how we've made a difference together.
+                    </p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="#" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Jess Ayoma</h4>
+                                    <p class="mb-3">Choir</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mb-0">This church has been a beacon of hope for me. The kindness and generosity of the members
+                                         have made a profound difference in my life. I'm thankful for the spiritual growth and the friendships
+                                          I've made here.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="{% static 'assets/images/pic10.jpg' %}" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Bradley Lee</h4>
+                                    <p class="mb-3">Media</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                    </div>
+                                    <p class="mb-0">I found a true sense of belonging when I started attending this church. The support and encouragement
+                                         from the congregation have helped me through some tough times, and I am grateful for the strong sense of community.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="{% static 'assets/images/pic11.jpg' %}" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Jude Praise</h4>
+                                    <p class="mb-3">Ushering</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                    </div>
+                                    <p class="mb-0">Joining this church has been a life-changing experience for me.
+                                         The community is warm and welcoming,
+                                         and the teachings have deeply impacted my spiritual journey. 
+                                         I feel more connected to my faith and to the people around me.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+<!-- Testimonial End -->
+
+      
+
+
+
+
+
+{% endblock %}
